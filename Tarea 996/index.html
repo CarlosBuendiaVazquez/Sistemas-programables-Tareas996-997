@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 996</title>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <style>
+        /* Estilos personalizados para el contenedor del slider */
+        .swiper-container {
+            width: 100%;
+            height: 1000px;
+        }
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            background: #eee;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Contenedor principal de Swiper -->
+    <div class="swiper-container">
+        <!-- Envoltorio de las diapositivas -->
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="/assets/Foto1.png" alt="Imagen 1" style="max-height: 100%;"></div>
+            <div class="swiper-slide"><img src="/assets/Foto2.png" alt="Imagen 1" style="max-height: 100%;"></div>
+            <div class="swiper-slide"><img src="/assets/Foto3.png" alt="Imagen 1" style="max-height: 100%;"></div>
+            <div class="swiper-slide"><img src="/assets/Foto4.png" alt="Imagen 1" style="max-height: 100%;"></div>
+            <div class="swiper-slide"><img src="/assets/Foto5.png" alt="Imagen 1" style="max-height: 100%;"></div>
+            <div class="swiper-slide"><img src="/assets/Foto6.png" alt="Imagen 1" style="max-height: 100%;"></div>
+            <div class="swiper-slide"><img src="/assets/Foto7.png" alt="Imagen 1" style="max-height: 100%;"></div>
+            <div class="swiper-slide"><img src="/assets/Foto8.png" alt="Imagen 1" style="max-height: 100%;"></div>
+            <div class="swiper-slide"><img src="/assets/Foto9.png" alt="Imagen 1" style="max-height: 100%;"></div>
+            <div class="swiper-slide"><img src="/assets/Foto10.png" alt="Imagen 1" style="max-height: 100%;"></div>
+
+        </div>
+        <!-- Botones de navegación (opcional) -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        // Inicializar Swiper
+        const swiper = new Swiper('.swiper-container', {
+            loop: false, // Hacer que el slider sea circular
+            //autoplay: {
+            //delay: 3000, // Retraso entre diapositivas en milisegundos
+            //disableOnInteraction: false, // No detener el autoplay al interactuar
+            //},
+            navigation: {
+                nextEl: '.swiper-button-next', // Botón siguiente
+                prevEl: '.swiper-button-prev', // Botón anterior
+            },
+        });
+    </script>
+</body>
+
+</html>
